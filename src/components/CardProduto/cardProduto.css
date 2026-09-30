@@ -1,5 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
 .card-wrapper{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
     flex-direction: column;
     gap: 8px;
     background-color: #F3F4F6;

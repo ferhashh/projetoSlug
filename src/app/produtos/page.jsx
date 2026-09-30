@@ -11,7 +11,7 @@ export default function Produtos() {
     const [msgErro, setMsgErro] = useState("");
 
     useEffect(() => {
-        fetch("https://dummyjson.com/products?limit=10&skip=10&select=id,title,price,images,description,brand,stock")
+        fetch("https://dummyjson.com/products?limit=10&skip=10&select=id,title,images")
             .then(res => res.json())
             .then(produtos => {
                 console.log(produtos);
@@ -37,10 +37,6 @@ export default function Produtos() {
                                 id={produto.id}
                                 title={produto.title}
                                 images={produto.images}
-                                price={produto.price}
-                                description={produto.description}
-                                brand={produto.brand}
-                                stock={produto.stock}
                             />
                         );
                     })}
